@@ -1,0 +1,14 @@
+{
+	"name": "webassembly_raw_101",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"compile": "node compile.js",
+		"go": "node run_the_wasm.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"wabt": "^1.0.32"
+	}
+}
