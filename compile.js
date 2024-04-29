@@ -2,8 +2,8 @@ const { readFileSync, writeFileSync } = require("fs");
 const wabtPromise = require("wabt")();
 const path = require("path");
 
-const inputWatPath = "main.wat";
-const outputWasmPath = "main.wasm";
+const inputWatPath = process.argv[2] || "main.wat";
+const outputWasmPath = inputWatPath.replace(".wat", ".wasm");
 
 wabtPromise.then((wabt) => {
 	const wasmModule = wabt.parseWat(
